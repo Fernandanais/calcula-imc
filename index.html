@@ -1,0 +1,32 @@
+<html>
+ <head>
+ <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>formulario peso ideal</title>
+<script src="js/main.js"></script>
+ </head>
+ <body>
+<form name="f1" id="f1" action="">
+<!--enmarcamos el formulario-->
+<fieldset>
+<!--le damos un nombre al marco-->
+<legend>CALCULO DEL PESO IDEAL IMC (Indice de Masa Corporal)</legend>
+ <p>Peso en kg.:
+ <!--definimos una caja donde introducir el dato del peso-->
+ <input type="text" name="peso" id="peso" size="3" maxlength="4">
+ </p>
+ <p>Altura en cm.:
+ <!--definimos una caja donde introducir el dato de la altura-->
+ <input type="text" name="altura" id="altura" size="3" maxlength="3">
+ <!--definimos un boton que hara la llamada a la funcion para calcular el imc-->
+ <input type="button" value="Calcular IMC" onClick="calculaIMC()">
+ </p>
+ <p> IMC:
+ <!--definimos una caja donde la funcion devolvera el valor de imc calculado-->
+ <input type="text" name="imc" id="imc" size="10" maxlength="15">
+ Leyenda:
+ <!--definimos una caja donde la funcion escribira el comentario, definido en leyenda-->
+ <input type="text" name="leyenda" id="leyenda" size="42">
+ </p>
+</fieldset>
+</form>
+ </body> 
